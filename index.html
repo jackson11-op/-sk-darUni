@@ -25,24 +25,32 @@
       min-height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       padding: 40px 20px;
-      background-color: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(4px);
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      margin: 20px;
-      border-radius: 20px;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #004d40;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
     }
 
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
+      text-align: center;
     }
 
     .sub-text {
       font-size: 18px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     #timer {
@@ -59,8 +67,9 @@
       padding: 20px;
       border-radius: 12px;
       max-width: 500px;
-      margin: 0 auto;
+      margin: 20px auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     #form-link a {
@@ -83,6 +92,12 @@
 <body>
 
   <div class="container">
+
+    <div class="info-box">
+      <p><strong>📌 Bu sayfa sınav dönemlerinde ortak alanların adil kullanımı için oluşturulmuştur.</strong></p>
+      <p>Masalarda çalışma süresi 90 dakika ile sınırlandırılmıştır. Süre sonunda bir anketle geri bildiriminiz alınır. Lütfen süre bitiminde masayı başkalarına bırakmayı unutmayın.</p>
+    </div>
+
     <h1>İyi çalışmalar! 😊💻📚</h1>
     <p class="sub-text">90 Dakikalık Çalışma Zamanlayıcısı</p>
     <p class="sub-text">Çalışma süreniz başladı. Başarılar! 💪</p>
@@ -94,6 +109,7 @@
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCpE9HadZ2Fc0Z13aUBk-1tqY8dK8kyibUqXRwPfKEKkepOQ/viewform" target="_blank">→ Ankete Git</a>
       <p>Teşekkür ederiz! 💚</p>
     </div>
+
   </div>
 
   <script>
