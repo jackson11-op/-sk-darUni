@@ -10,13 +10,14 @@
       padding: 0;
       height: 100%;
       font-family: Arial, sans-serif;
-      text-align: center;
-      color: #fff;
-      background-image: url('https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=600');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      color: #003d33;
+      background-color: #d0f0e0;
+      background-image: linear-gradient(135deg, #d0f0e0 25%, transparent 25%), 
+                        linear-gradient(225deg, #d0f0e0 25%, transparent 25%), 
+                        linear-gradient(45deg, #d0f0e0 25%, transparent 25%), 
+                        linear-gradient(315deg, #d0f0e0 25%, transparent 25%);
+      background-size: 40px 40px;
+      background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
       box-sizing: border-box;
     }
 
@@ -26,8 +27,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 30px 20px;
-      background-color: rgba(0, 0, 0, 0.5); /* okunabilirlik için karartma */
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin: 20px;
+      border-radius: 20px;
     }
 
     h1 {
@@ -37,28 +42,30 @@
 
     .sub-text {
       font-size: 18px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     #timer {
-      font-size: 64px;
+      font-size: 60px;
       font-weight: bold;
-      margin-bottom: 40px;
+      margin: 30px 0;
+      color: #004d40;
     }
 
     #form-link {
       display: none;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: #fff;
       color: #000;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       max-width: 500px;
-      margin: 20px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     #form-link a {
       font-weight: bold;
-      color: #006666;
+      color: #00796b;
       text-decoration: underline;
       font-size: 18px;
     }
